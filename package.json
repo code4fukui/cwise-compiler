@@ -4,7 +4,8 @@
   "description": "cwise's internal compiler",
   "main": "compiler.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "node test/test.js",
+    "build-es": "deno bundle compiler.js | terser -c -m --module -o compiler.min.js"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,6 @@
     "ndarray": "^1.0.15",
     "cwise-parser": "^1.0.0",
     "tape": "^4.0.0"
-  }
+  },
+  "type": "module"
 }

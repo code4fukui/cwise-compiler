@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "uniq": "https://code4fukui.github.io/uniq/uniq.js",
+    "cwise-parser": "https://code4fukui.github.io/cwise-parser/cwise-parser.js",
+    "ndarray": "https://code4fukui.github.io/ndarray/ndarray.min.js"
+  }
+}

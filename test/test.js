@@ -1,10 +1,10 @@
-"use strict"
-var parse = require("cwise-parser")
-var compile = require("../compiler.js")
-var ndarray = require("ndarray")
-var ops = require("ndarray-ops")
+import parse from "cwise-parser"
+import compile from "../compiler.js"
+import ndarray from "ndarray"
+import ops from "ndarray-ops"
+import tape from "tape"
 
-require("tape")("block tests", function(t) {
+tape("block tests", function(t) {
   var body2 = parse(function(a,b) {
       a = b[0]+b[1]+1
   })

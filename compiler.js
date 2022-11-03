@@ -1,6 +1,4 @@
-"use strict"
-
-var createThunk = require("./lib/thunk.js")
+import createThunk from "./lib/thunk.js"
 
 function Procedure() {
   this.argTypes = []
@@ -106,4 +104,4 @@ function compileCwise(user_args) {
   return createThunk(proc)
 }
 
-module.exports = compileCwise
+export default compileCwise
